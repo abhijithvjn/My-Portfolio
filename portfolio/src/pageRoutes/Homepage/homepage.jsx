@@ -1,4 +1,3 @@
-import React from "react";
 import homeData from "../../staticData/homepageData";
 import HomeBanner from "../../widgets/Homebanner";
 import About from "../../widgets/About";
@@ -8,6 +7,7 @@ import Blogs from "../../widgets/Blogs";
 
 const Homepage = () => {
     const data = homeData?.data;
+
     const widgetMap = {
         HomeBanner,
         About,

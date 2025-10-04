@@ -1,11 +1,34 @@
-import React from 'react'
+import React from "react";
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
 const ContactUs = () => {
-  return (
-    <div>
-      Contact Us Page
-    </div>
-  )
-}
 
-export default ContactUs
+    return (
+        <section className="min-h-screen flex flex-col items-center justify-center py-20 px-6 md:px-12 lg:px-20 bg-gray-50 dark:bg-gray-900">
+            {/* Header */}
+            <header className="text-center mb-16">
+                <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300">
+                    This page is currently under development. Please check back soon!
+                </p>
+            </header>
+
+            {/* Card Notice */}
+            <div className="max-w-xl w-full">
+                <Card className="border-none shadow-lg p-8 bg-white dark:bg-gray-800 text-center">
+                    <CardHeader>
+                        <h3 className="text-2xl md:text-3xl font-semibold cormorant">Under Development 🚧</h3>
+                    </CardHeader>
+                    <CardContent className="mt-4 text-gray-700 dark:text-gray-300">
+                        <p className="mb-2">We are working hard to bring you a fully functional contact page.</p>
+                        <p>
+                            For inquiries, you can reach us at:{" "}
+                            <span className="font-semibold">abhijithvjn1999@gmail.com</span>
+                        </p>
+                    </CardContent>
+                </Card>
+            </div>
+        </section>
+    );
+};
+
+export default ContactUs;

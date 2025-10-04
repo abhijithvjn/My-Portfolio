@@ -1,5 +1,6 @@
 import Layout from "./components/Layout/layout";
 import { pageRoutes } from "./contants/pageRoutes";
+import ContactUs from "./pageRoutes/ContactUs/contactus";
 import Homepage from "./pageRoutes/Homepage";
 
 export const routes = [
@@ -17,7 +18,7 @@ export const routes = [
             },
             {
                 path: pageRoutes.CONTACT,
-                element: <div>contact</div>,
+                element: <ContactUs />,
             },
         ],
     },

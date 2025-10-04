@@ -123,7 +123,7 @@ const homeData = {
                     title: "Contact Me",
                     phone: "+91-8086085370",
                     message: "Feel free to reach out for collaborations or opportunities.",
-                    email: "abhijithvjn1999@gmailcom",
+                    email: "abhijithvjn1999@gmail.com",
                     button: {
                         title: "Contact Me",
                         url: "/contact",
