@@ -13,7 +13,7 @@ const Blogs = ({ data }) => {
     return (
         <section id="blogs" className="py-20 bg-gray-50">
             <header className="text-center max-w-3xl mx-auto mb-12 font-bebas">
-                <h2 className="text-5xl md:text-6xl font-bold mb-4 text-gray-900">{data?.title}</h2>
+                <h2 className="text-5xl md:text-6xl font-bold mb-4">{data?.title}</h2>
             </header>
 
             <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-4 sm:px-6 md:px-10 lg:px-16">
@@ -36,7 +36,7 @@ const Blogs = ({ data }) => {
                 <div className="flex justify-center mt-12">
                     <button
                         onClick={handleReadMore}
-                        className="px-8 py-3 bg-gray-900 text-white rounded-xl font-bebas text-xl shadow-lg hover:bg-gray-800 transition"
+                        className="px-8 py-3 bg-(--button-bg) text-white rounded-xl font-bebas text-xl shadow-lg transition"
                     >
                         {data.readMoreButton.text}
                     </button>

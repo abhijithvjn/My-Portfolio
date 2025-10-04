@@ -63,6 +63,7 @@
   --about-section-bg:oklch(20.556% 0.06226 143.697);
   --project-section-bg:oklch(19.827% 0.05923 143.839);
   --homebanner-section-bg:oklch(96.2% 0.059 95.617);
+  --button-bg: oklch(21.729% 0.05388 280.951);
   --header-footer-bg: oklch(20.8% 0.042 265.755);
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);

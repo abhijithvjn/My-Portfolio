@@ -1,5 +1,5 @@
-import React from "react";
 import { Card, CardHeader, CardContent } from "@/components/ui/card";
+import { Link } from "react-router";
 
 const Blogs = () => {
     return (
@@ -19,7 +19,7 @@ const Blogs = () => {
                     </CardHeader>
                     <CardContent className="mt-4 text-gray-700 dark:text-gray-300">
                         <p className="mb-2">Preparing valuable articles for you.</p>
-                        <p>
+                        <p className="mb-4">
                             Meanwhile, you can reach out or follow us for updates at:{" "}
                             <a
                                 href="mailto:abhijithvjn1999@gmail.com"
@@ -28,6 +28,14 @@ const Blogs = () => {
                                 abhijithvjn1999@gmail.com
                             </a>
                         </p>
+
+                        {/* Back to Home Button */}
+                        <Link
+                            to="/"
+                            className="inline-block mt-4 px-4 py-2 md:px-6 md:py-3 text-white font-semibold rounded-lg bg-(--button-bg) transition-colors"
+                        >
+                            Back to Home
+                        </Link>
                     </CardContent>
                 </Card>
             </div>
