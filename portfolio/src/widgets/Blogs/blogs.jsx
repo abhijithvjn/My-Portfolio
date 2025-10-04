@@ -34,7 +34,7 @@ const Blogs = ({ data }) => {
                 <div className="flex justify-center mt-12">
                     <button
                         onClick={handleReadMore}
-                        className="px-8 py-3 cursor-pointer bg-white text-gray-900 rounded-xl cormorant text-xl shadow-lg hover:bg-gray-200 transition"
+                        className="px-8 py-3 cursor-pointer bg-(--button-bg) rounded-xl cormorant text-xl shadow-lg transition"
                     >
                         {data.readMoreButton.text}
                     </button>
