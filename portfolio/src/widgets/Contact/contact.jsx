@@ -38,7 +38,7 @@ const Contact = ({ data }) => {
                     <h3 className="text-3xl font-bold mb-4 cormorant">{button?.title}</h3>
                     <button
                         onClick={handleClick}
-                        className="px-8 py-3 cursor-pointer bg-white text-gray-900 rounded-xl cormorant text-xl shadow-lg hover:bg-gray-200 transition"
+                        className="px-8 py-3 cursor-pointer bg-(--button-bg) rounded-xl cormorant text-xl shadow-lg hover:bg-gray-200 transition"
                     >
                         {button?.text}
                     </button>
