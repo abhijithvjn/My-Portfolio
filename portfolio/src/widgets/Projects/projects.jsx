@@ -5,7 +5,7 @@ const Projects = ({ data }) => {
     const { title, description, categories } = data;
 
     return (
-        <section id="projects" className="py-20">
+        <section id="projects" className="py-10">
             <header className="text-center max-w-3xl mx-auto mb-16 font-bebas">
                 <h2 className="text-5xl font-bold mb-4">{title}</h2>
                 <p className="text-lg md:text-xl">{description}</p>
