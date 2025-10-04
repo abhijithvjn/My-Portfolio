@@ -23,10 +23,8 @@ const Blogs = ({ data }) => {
                         className="bg-white rounded-2xl shadow-lg p-6 flex flex-col justify-between hover:shadow-xl transition"
                     >
                         <div>
-                            <h3 className="text-2xl md:text-3xl font-bold font-bebas mb-4 text-gray-900">{post.title}</h3>
-                            <p className="text-gray-600 text-base md:text-lg leading-relaxed line-clamp-5">
-                                {post.content}
-                            </p>
+                            <h3 className="text-2xl font-bold mb-2 cormorant">{post.title}</h3>
+                            <p className="text-sm md:text-base line-clamp-5">{post.content}</p>
                         </div>
                     </div>
                 ))}
@@ -36,7 +34,7 @@ const Blogs = ({ data }) => {
                 <div className="flex justify-center mt-12">
                     <button
                         onClick={handleReadMore}
-                        className="px-8 py-3 bg-(--button-bg) text-white rounded-xl font-bebas text-xl shadow-lg transition"
+                        className="px-8 py-3 cursor-pointer bg-white text-gray-900 rounded-xl cormorant text-xl shadow-lg hover:bg-gray-200 transition"
                     >
                         {data.readMoreButton.text}
                     </button>
