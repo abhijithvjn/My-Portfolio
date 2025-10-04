@@ -139,21 +139,38 @@ const homeData = {
                     title: "Blogs",
                     posts: [
                         {
-                            title: "Building a Modern Portfolio with Next.js",
+                            title: "State Management in React and Next.js: From Context to Jotai",
                             content: `
-          In this blog, I will walk you through building a modern portfolio using Next.js. 
-          We will cover App Router, dynamic routes, data-driven components, Tailwind CSS for styling, 
-          and optimizations for performance and SEO. By the end of this guide, you'll have a fully functional, 
-          responsive, and optimized portfolio ready to showcase your work.
+          Managing state efficiently is at the heart of every React and Next.js application.
+          In this post, we’ll explore modern state management tools—Jotai, Zustand, and Recoil—
+          and how they compare to the traditional Context API. We’ll also discuss how Server Components
+          and React Suspense change the way we think about client-side state in Next.js 15.
         `,
                         },
                         {
-                            title: "React Query vs SWR: A Practical Guide",
+                            title: "SWR vs Redux Toolkit Query: The New Era of Data Fetching",
                             content: `
-          React Query and SWR are two popular libraries for data fetching in React applications. 
-          In this blog, we will compare their core concepts, caching strategies, ease of use, 
-          and performance considerations. You'll learn when to use each, and how to integrate 
-          them into your modern React or Next.js projects.
+          Data fetching has evolved beyond useEffect and fetch. In this guide, we’ll compare SWR and Redux Toolkit Query—
+          two powerful tools designed for caching, revalidation, and server synchronization in React and Next.js apps.
+          You’ll learn when to use each, how they handle stale data, and how to integrate them with Server Actions
+          for hybrid data fetching strategies.
+        `,
+                        },
+                        {
+                            title: "Building Reactive UI with Zustand and Next.js",
+                            content: `
+          Zustand offers a minimalist and fast approach to state management, ideal for modern React and Next.js projects.
+          In this blog, we’ll walk through setting up a global store, optimizing performance using selectors,
+          and combining Zustand with React Server Components for clean, scalable architectures.
+        `,
+                        },
+                        {
+                            title: "Stop Overusing useEffect: Smarter Patterns for React and Next.js",
+                            content: `
+          Many developers rely on useEffect for logic that doesn't belong there — from data fetching to DOM manipulation.
+          In this post, we’ll explore when useEffect is truly necessary, and when you can replace it with
+          Server Components, derived state, or event-driven updates. You’ll learn practical refactors that 
+          simplify your components, improve performance, and align with React’s new rendering model.
         `,
                         },
                     ],
