@@ -11,7 +11,7 @@ const About = ({ data }) => {
                 <p className="text-lg md:text-xl">{subtitle}</p>
             </header>
 
-            <div className="max-w-6xl mx-auto flex flex-col gap-10 px-6 md:px-12 lg:px-20 p-10">
+            <div className="max-w-6xl mx-auto flex flex-col gap-10 px-6 md:px-12 lg:px-20 pt-6 md:pt-10 pb-10">
                 <h3 className="text-lg sm:text-xl md:text-2xl lg:text-2xl font-bold cormorant">EXPERIENCE</h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {experience.map((exp, index) => (
