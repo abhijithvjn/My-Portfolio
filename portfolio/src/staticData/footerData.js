@@ -6,10 +6,10 @@ const footerData = {
     widget_type: 'Footer',
     data: {
       navigation: [
-        { title: 'About', url: '/about' },
-        { title: 'Projects', url: '/projects' },
-        { title: 'Contact', url: '/contact' },
-        { title: 'Blogs', url: '/blogs' }
+        { title: 'About', url: '#about' },
+        { title: 'Projects', url: '#projects' },
+        { title: 'Contact', url: '#contact' },
+        { title: 'Blogs', url: '#blogs' }
       ],
       socialLinks: [
         { title: 'GitHub', url: 'https://github.com/abhijithvjn', icon: FaGithub },
