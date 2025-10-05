@@ -8,22 +8,15 @@ const Footer = () => {
     return (
         <footer className="w-full bg-gray-800 shadow-md text-white">
             <div className="container mx-auto flex flex-col md:flex-row items-start md:items-center pt-15 py-6 justify-between space-y-6 md:space-y-0">
-                
-                {/* Navigation */}
                 <div className="flex flex-row space-x-6 cormorant">
                     <div className="flex flex-col space-y-2 px-5">
                         {navigation.map((nav, index) => (
-                            <Link
-                                key={index}
-                                to={nav.url} // e.g. "/#about"
-                                className="hover:text-blue-400 transition-colors"
-                            >
+                            <Link key={index} to={nav.url} className="hover:text-blue-400 transition-colors">
                                 {nav.title}
                             </Link>
                         ))}
                     </div>
 
-                    {/* Social Links */}
                     <div className="flex flex-col space-y-2 px-5">
                         {socialLinks.map((social, index) => {
                             const Icon = social.icon;
@@ -43,7 +36,6 @@ const Footer = () => {
                     </div>
                 </div>
 
-                {/* Contact */}
                 <div className="flex flex-col px-5 bodoni-moda">
                     <div className="flex flex-col text-left space-y-2 h-full break-words">
                         <p>
