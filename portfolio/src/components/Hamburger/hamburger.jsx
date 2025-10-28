@@ -1,40 +1,66 @@
-import React, { useState } from "react";
+"use client";
+import React, { useState, useLayoutEffect, useRef } from "react";
 import { Link } from "react-router";
+import { gsap } from "gsap";
 
 const Hamburger = ({ menuItems }) => {
-    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const linksRef = useRef([]);
 
-    return (
-        <>
-            {/* Hamburger icon */}
-            {!mobileMenuOpen && (
-                <button className="lg:hidden px-4 py-2 text-2xl" onClick={() => setMobileMenuOpen(true)}>
-                    ☰
-                </button>
-            )}
+  useLayoutEffect(() => {
+    if (mobileMenuOpen && linksRef.current.length > 0) {
+      // Set initial states for links
+      gsap.set(linksRef.current, { opacity: 0, y: 30 });
 
-            {/* Mobile menu */}
-            {mobileMenuOpen && (
-                <div className="fixed top-0 left-0 w-full h-screen bg-gray-900 text-white flex flex-col items-center justify-center space-y-6 z-50">
-                    {menuItems.map((item, index) => (
-                        <Link
-                            key={index}
-                            to={item.url}
-                            className="text-xl hover:text-blue-400"
-                            onClick={() => setMobileMenuOpen(false)} // close menu on click
-                        >
-                            {item.title}
-                        </Link>
-                    ))}
+      // Animate in with stagger
+      gsap.to(linksRef.current, {
+        opacity: 1,
+        y: 0,
+        duration: 0.6,
+        stagger: 0.15,
+        ease: "power3.out",
+      });
+    }
+  }, [mobileMenuOpen]);
 
-                    {/* Close button */}
-                    <button className="absolute top-4 right-4 text-3xl" onClick={() => setMobileMenuOpen(false)}>
-                        ✕
-                    </button>
-                </div>
-            )}
-        </>
-    );
+  return (
+    <>
+      {/* Hamburger Icon */}
+      {!mobileMenuOpen && (
+        <button
+          className="lg:hidden px-4 py-2 text-2xl"
+          onClick={() => setMobileMenuOpen(true)}
+        >
+          ☰
+        </button>
+      )}
+
+      {/* Mobile Menu */}
+      {mobileMenuOpen && (
+        <div className="fixed top-0 left-0 w-full h-screen bg-gray-900 text-white flex flex-col items-center justify-center space-y-6 z-50">
+          {menuItems.map((item, index) => (
+            <Link
+              key={index}
+              to={item.url}
+              ref={(el) => (linksRef.current[index] = el)}
+              className="text-xl hover:text-blue-400 transition-all"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              {item.title}
+            </Link>
+          ))}
+
+          {/* Close Button */}
+          <button
+            className="absolute top-4 right-4 text-3xl"
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            ✕
+          </button>
+        </div>
+      )}
+    </>
+  );
 };
 
 export default Hamburger;
