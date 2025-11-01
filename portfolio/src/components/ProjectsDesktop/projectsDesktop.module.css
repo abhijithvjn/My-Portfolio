@@ -1,7 +1,6 @@
 .categoryBlock {
   position: relative;
-  margin-bottom: 0;
-  padding-bottom: 20vh;
+  padding-bottom: 30vh; /* prevents overlap */
 }
 
 .categoryTitle {
@@ -15,10 +14,11 @@
 
 .card {
   position: relative;
-  margin-top: 26vh;
+  margin-top: 25vh;
   height: 60vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  transform-origin: center;
   will-change: transform, opacity;
 }
