@@ -1,31 +1,31 @@
 .categoryBlock {
   position: relative;
-  margin-bottom: 0;
-  padding-bottom: 25vh;
-}
-
-.cardWrapper {
-  position: relative;
-  padding-top: 5vh;
+  padding-bottom: 150px;
 }
 
 .categoryTitle {
-  position: sticky;
-  top: 10vh;
+  position: relative;
   z-index: 10;
-  background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(8px);
-  padding: 1rem 0.5rem;
+  backdrop-filter: blur(10px);
+  padding: 1rem;
   border-radius: 12px;
   text-align: center;
 }
 
+.cardWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+}
+
 .card {
   position: relative;
-  margin-top: 24vh;
-  height: 60vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  will-change: transform, opacity;
+  width: 95%;
+  max-height: 75vh;
+}
+
+.innerCard {
+  transition: opacity 0.3s ease;
 }
