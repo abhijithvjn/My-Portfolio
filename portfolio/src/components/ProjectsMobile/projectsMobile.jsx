@@ -68,7 +68,7 @@ const ProjectsMobile = ({ data }) => {
 
         ScrollTrigger.create({
           trigger: category,
-          start: "top top+=100",
+          start: "top top+=150",
           end: `+=${steps * 500}`,
           pin: title,
           pinSpacing: false,
