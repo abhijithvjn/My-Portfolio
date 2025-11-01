@@ -11,7 +11,7 @@ const Contact = ({ data }) => {
     };
 
     return (
-        <section id="contact" className="py-20">
+        <section id="contact" className="">
             <header className="text-center max-w-3xl mx-auto mb-12 font-bebas">
                 <h2 className="text-5xl md:text-6xl font-bold mb-4">{title}</h2>
                 <p className="text-lg md:text-xl">{message}</p>

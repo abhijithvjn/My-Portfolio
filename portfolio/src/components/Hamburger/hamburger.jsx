@@ -70,7 +70,7 @@ const Hamburger = ({ menuItems }) => {
         className={`fixed top-0 left-0 w-full h-screen bg-gray-900 text-white flex flex-col items-center justify-center space-y-6 z-50 ${
           mobileMenuOpen ? "pointer-events-auto" : "pointer-events-none"
         }`}
-        style={{ opacity: 0 }} // initial state for GSAP
+        style={{ opacity: 0 }}
       >
         {menuItems.map((item, index) => (
           <Link

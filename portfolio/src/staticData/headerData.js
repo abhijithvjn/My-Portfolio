@@ -6,6 +6,7 @@ const headerData = {
             logo: {
                 text: "YourPortfolio",
                 image: "/logo/abhi_logo.png",
+                url: "#home",
             },
             navigation: [
                 { title: "Home", url: "#home" },
